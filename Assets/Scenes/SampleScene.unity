@@ -537,6 +537,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b47761f4fa4dea1408c8dc7094f10441, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 100
+  damageValue: 10
   duration: 0.5
   strength: 1
   vibrato: 10
@@ -651,6 +653,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b47761f4fa4dea1408c8dc7094f10441, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 100
+  damageValue: 20
   duration: 0.5
   strength: 1
   vibrato: 10
@@ -765,6 +769,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b47761f4fa4dea1408c8dc7094f10441, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 100
+  damageValue: 15
   duration: 0.5
   strength: 1
   vibrato: 10

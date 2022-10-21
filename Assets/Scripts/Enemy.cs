@@ -6,6 +6,7 @@ using DG.Tweening;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] private int health = 100;
+    [SerializeField] private int damageValue = 10;
     [Space]
     [Header("Enemy Shake Dotween")]
     [SerializeField] private float duration;    // Shake süresi
@@ -25,16 +26,17 @@ public class Enemy : MonoBehaviour
     {
         
     }
-    
+
     void Update()
     {
         
     }
-    private void Damage()
+    private void Damage(int damage)
     {
         this.transform.GetComponent<MeshRenderer>().material.DOColor(Color.black, duration).From();          
         this.transform.DOShakeScale(duration, strength, vibrato, randomness);
-        health -= 10;
+        damage = this.damageValue;  // Düşmanın alacağı damage tanımlı olan damage değeri kadar azalır
+        health -= damage;
         Debug.Log(this.gameObject.name + " - Health: " + health);
         if (health <= 0)
         {
