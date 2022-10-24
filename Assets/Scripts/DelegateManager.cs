@@ -9,7 +9,7 @@ public class DelegateManager : MonoBehaviour
 
     public static event OnPlayerAttack EventPlayerAttack;   // Delegate event (method toplama) -- diðer scriptler üzerinden olaylarý dinler ve çalýþtýrýr 
     public static event OnPlayerAttack EventPlayerAttackDebug;   // Delegate event (method toplama) -- diðer scriptler üzerinden olaylarý dinler ve çalýþtýrýr 
-
+    // static yaparak tüm kodlardan erþime açýk hale getirilir
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))
